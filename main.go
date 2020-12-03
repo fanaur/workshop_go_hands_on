@@ -16,7 +16,7 @@ func main() {
 	r.GET("/fanaur", func(c *gin.Context) {
 		c.JSON(200, gin.H{
 			"owner": "Facundo Silva",
-			"greeting": "nada...",
+			"greeting": "你好，我叫Facundo",
 			"repository": "https://github.com/fanaur/workshop_go_hands_on",
 		})
 	})
