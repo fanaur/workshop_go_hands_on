@@ -15,7 +15,9 @@ func main() {
 	})
 	r.GET("/fanaur", func(c *gin.Context) {
 		c.JSON(200, gin.H{
-			"Hi": "hi",
+			"owner": "Facundo Silva",
+			"greeting": "nada...",
+			"repository": "https://github.com/fanaur/workshop_go_hands_on",
 		})
 	})
 	r.Run(port()) // listen and serve on 0.0.0.0:8080 (for windows "localhost:8080")
